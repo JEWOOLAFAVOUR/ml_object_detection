@@ -5,12 +5,14 @@ A complete object detection system using SSD MobileNet v2 with Streamlit web int
 ## 🚀 Quick Start
 
 ### Option 1: Automatic Setup (Recommended)
+
 ```bash
 # Run the setup script
 setup.bat
 ```
 
 ### Option 2: Manual Setup
+
 ```bash
 # Install dependencies
 pip install -r requirements.txt
@@ -73,11 +75,13 @@ This system is designed for final year project demonstrations:
 ## 🧪 Testing
 
 ### Test the Detector
+
 ```bash
 python test_detector.py
 ```
 
 ### Test with Sample Images
+
 1. Place images in `sample_images/` folder
 2. Run the Streamlit app
 3. Select from dropdown or upload new images
@@ -114,16 +118,19 @@ The app will open in your browser at `http://localhost:8501`
 ## 🛠️ Troubleshooting
 
 ### Model Won't Load
+
 - Check internet connection
 - Ensure TensorFlow Hub can download models
 - Try running `test_detector.py` first
 
 ### No Objects Detected
+
 - Lower the confidence threshold (try 0.3 or 0.2)
 - Ensure image has clear, recognizable objects
 - Check image quality and lighting
 
 ### Performance Issues
+
 - Close other applications
 - Use smaller images for faster processing
 - Consider GPU acceleration if available
@@ -131,6 +138,7 @@ The app will open in your browser at `http://localhost:8501`
 ## 📝 Technical Details
 
 ### Dependencies
+
 - **streamlit:** Web interface framework
 - **tensorflow:** Deep learning framework
 - **tensorflow-hub:** Pre-trained model hub
@@ -139,6 +147,7 @@ The app will open in your browser at `http://localhost:8501`
 - **numpy:** Numerical computations
 
 ### Model Details
+
 - **Input:** RGB images, 300x300 pixels
 - **Output:** Bounding boxes, class labels, confidence scores
 - **Architecture:** Single Shot MultiBox Detector with MobileNet backbone
